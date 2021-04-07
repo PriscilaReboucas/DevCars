@@ -44,7 +44,7 @@ namespace DevCars.API
                     Version = "v1",
                     Contact = new OpenApiContact
                     {
-                        Name = "Luis Felipe",
+                        Name = "Priscila Rebouças",
                         Email = "priscilaresantos@gmail.com",
                         Url = new Uri("https://www.google.com")
                     }
