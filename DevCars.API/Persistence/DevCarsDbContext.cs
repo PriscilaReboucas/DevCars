@@ -1,11 +1,6 @@
 ﻿using DevCars.API.Entities;
-using DevCars.API.Persistence.Configurations;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace DevCars.API.Persistence
 {
@@ -38,4 +33,4 @@ namespace DevCars.API.Persistence
         }
     }
 }
-    
+

@@ -31,3 +31,12 @@ Dapper mais rapido que aspnet.core
 App Service - MicrosoftAzure - Não esquecer recursos e testes ativos.
 
 $ dotnet ef migrations add InitialMigration -o Persistence/Migrations
+
+-----------------------------------------------------------------------
+4 dias
+Baixar o Dapper do Nuget manager
+Documentação do Swagger
+<PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>

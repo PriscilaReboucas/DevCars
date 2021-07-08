@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevCars.API.Entities
 {
@@ -58,7 +55,7 @@ namespace DevCars.API.Entities
 
         public CarStatusEnum Status { get; private set; }
 
-        public DateTime RegisteredAt { get; private set; }        
+        public DateTime RegisteredAt { get; private set; }
 
         public void Update(string color, decimal price)
         {

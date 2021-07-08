@@ -14,11 +14,11 @@ namespace DevCars.API.Entities
             TotalCost = items.Sum(i => i.Price) + price;
             ExtraItems = items;
         }
-        
+
         public int Id { get; private set; }
         public int IdCar { get; private set; }
         public Car Car { get; private set; }
-        public int IdCustomer { get; private set; }       
+        public int IdCustomer { get; private set; }
         public Customer Customer { get; private set; }
         public decimal TotalCost { get; private set; }
         public List<ExtraOrderItem> ExtraItems { get; private set; }

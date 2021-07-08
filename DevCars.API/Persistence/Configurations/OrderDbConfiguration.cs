@@ -8,7 +8,7 @@ namespace DevCars.API.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> builder)
         {
-          
+
             builder
                 .HasKey(o => o.Id);
 
@@ -26,7 +26,7 @@ namespace DevCars.API.Persistence.Configurations
 
             //builder
             //  .ToTable("Order");
-            
+
         }
     }
 }

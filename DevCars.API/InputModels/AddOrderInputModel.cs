@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DevCars.API.InputModels
 {
@@ -19,7 +16,7 @@ namespace DevCars.API.InputModels
         /// Itens do pedido
         /// </summary>
         public List<ExtraItemInputModel> ExtraItems { get; set; }
-    }   
+    }
 
     public class ExtraItemInputModel
     {

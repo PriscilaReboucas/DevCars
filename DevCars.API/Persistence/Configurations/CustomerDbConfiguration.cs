@@ -9,7 +9,7 @@ namespace DevCars.API.Persistence.Configurations
 
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
-    
+
             builder.HasKey(c => c.Id);
 
             //builder.ToTable("Customer");

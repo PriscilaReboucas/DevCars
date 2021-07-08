@@ -4,7 +4,6 @@ using DevCars.API.Persistence;
 using DevCars.API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Linq;
 
 namespace DevCars.API.Controllers
@@ -48,7 +47,7 @@ namespace DevCars.API.Controllers
             // busca o carro para acessar o preco atual
             var car = _dbContext.Cars.SingleOrDefault(c => c.Id == model.IdCar); // obtem as informações do carro  
 
-            var order = new Order( model.IdCar, model.IdCustomer, car.Price, extraItems);
+            var order = new Order(model.IdCar, model.IdCustomer, car.Price, extraItems);
 
             _dbContext.Orders.Add(order);
             _dbContext.SaveChanges();
@@ -56,7 +55,7 @@ namespace DevCars.API.Controllers
             // existe api para retornar dados do pedido.
             return CreatedAtAction(
                 nameof(GetOrder),
-                new {id = order.IdCustomer, orderid = order.Id},
+                new { id = order.IdCustomer, orderid = order.Id },
                 model
                 );
         }
@@ -70,10 +69,10 @@ namespace DevCars.API.Controllers
         /// <returns></returns>
         [HttpGet("{id}/orders/{orderid}")]
         public IActionResult GetOrder(int id, int orderid)
-        {         
+        {
             //Busca o pedido do cliente.
             var order = _dbContext.Orders
-                .Include(o=>o.ExtraItems) // retorna a lista de extra items da order.
+                .Include(o => o.ExtraItems) // retorna a lista de extra items da order.
                 .SingleOrDefault(o => o.Id == orderid);
 
             if (order == null)

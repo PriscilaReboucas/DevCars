@@ -19,11 +19,11 @@ namespace DevCars.API.Persistence.Configurations
              .HasMaxLength(100)
              //.HasColumnName("Marca")
              .HasColumnType("Varchar(100)")
-             .HasDefaultValue("Padrão"); 
+             .HasDefaultValue("Padrão");
 
-             builder
-            .Property(c => c.ProductionDate)
-            .HasDefaultValueSql("getdate()"); // metodo padrão do sql
+            builder
+           .Property(c => c.ProductionDate)
+           .HasDefaultValueSql("getdate()"); // metodo padrão do sql
         }
     }
 }
