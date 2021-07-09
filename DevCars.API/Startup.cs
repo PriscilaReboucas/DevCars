@@ -17,6 +17,7 @@ namespace DevCars.API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //Teste realizado para o recurso de stash git e stage
         }
 
         public IConfiguration Configuration { get; }
