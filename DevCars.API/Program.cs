@@ -8,7 +8,7 @@ namespace DevCars.API
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            //Teste realizado para o recurso de stash git
+            //Teste realizado para o recurso de stash git teste 
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
